@@ -346,7 +346,7 @@ cdef class CompletionDAWG(DAWG):
 
         return completer.Next()
 
-    cpdef bytes tobytes(self) except +:
+    cpdef bytes tobytes(self):
         """
         Return raw DAWG content as bytes.
         """
